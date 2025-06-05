@@ -1,0 +1,52 @@
+[
+  {
+    "id": "Version 1",
+    "template": "Please rate the automatability of \"{item_name}\" in the context of generative Al development over the medium term (next 5 years) on a scale of 1 to 5, where: 1= Not automatable 2= Slightly automatable 3= Moderately automatable 4= Highly automatable 5= Fully automatable. Please provide a single numerical rating based on this scale!",
+    "expects_explanation": false
+  },
+  {
+    "id": "Version 2",
+    "template": "As an Al expert how would you rate the automatability of the following skill: \"{item_name}\" over the medium term (next 5 years). Please provide a short explanation and rate automatability on a scale of 1 (=not automatable) to 5 (=fully automatable).",
+    "expects_explanation": true
+  },
+  {
+    "id": "Version 3",
+    "template": "As an Al expert how would you rate the automatability of the following skill: \"{item_name}\" ({item_descriptor}) over the medium term (next 5 years). Please provide a short explanation and rate automatability on a scale of 1 (=not automatable) to 5 (=fully automatable).",
+    "expects_explanation": true
+  },
+  {
+    "id": "Version 4",
+    "template": "Assume you are an expert in generative Al: As such rate how \"{item_name}\" can be automated by generative Al. Please use a scale from 1 to 5 whereby 1= 'not automatable' and 5= 'fully automatable'. As an answer, please just give 1 single number!",
+    "expects_explanation": false
+  },
+  {
+    "id": "Version 5",
+    "template": "Assume you are an expert in generative Al: As such rate how \"{item_name}\" can be automated by generative Al. Please use a scale from 1 to 5 whereby 1= 'not automatable' and 5= 'fully automatable'. As an answer, please give 1 single number and a short explanation for your rating!",
+    "expects_explanation": true
+  },
+  {
+    "id": "Version 6",
+    "template": "Please rate the following occupational skill \"{item_name}\" for its susceptibility to advances in generative Al over the next 5 years on a scale of 1 to 5, where: 1= Not automatable: This skill is unlikely to be automated by generative Al in the next 5 years. 2= Slightly automatable: This skill may see limited automation by generative Al in the next 5 years. 3= Moderately automatable: This skill has a moderate chance of being automated by generative Al in the next 5 years. 4= Highly automatable: This skill is likely to be automated by generative Al to a significant extent in the next 5 years. 5= Fully automatable: This skill is highly likely to be completely automated by generative Al in the next 5 years. Please provide a single numerical rating for each skill based on this scale. Also include a brief and concise explanation for the rating.",
+    "expects_explanation": true
+  },
+   {
+    "id": "Version 7",
+    "template": "Please assess the following occupational skill \"{item_name}\" for its susceptibility to automation due to developments in generative Al over the next 5 years on a scale of 1 to 5, where: 1= Not automatable: This skill is unlikely to be automated by generative Al in the next 5 years. 2= Slightly automatable: This skill may see limited automation by generative Al in the next 5 years. 3= Moderately automatable: This skill has a moderate chance of being automated by generative Al in the next 5 years. 4= Highly automatable: This skill is likely to be automated by generative Al to a significant extent in the next 5 years. 5= Fully automatable: This skill is highly likely to be completely automated by generative Al in the next 5 years. Please provide a single numerical rating for each skill based on this scale. Also include a brief and concise explanation for the rating.",
+    "expects_explanation": true
+  },
+  {
+    "id": "Version 8",
+    "template": "Please rate the following skill \"{item_name}\" for its susceptibility to advances in generative Al over the medium term (next 5 years) on a scale of 1 to 5, where: 1= Not automatable: This skill is unlikely to be automated by generative Al in the next 5 years. 2= Slightly automatable: This skill may see limited automation by generative Al in the next 5 years. 3= Moderately automatable: This skill has a moderate chance of being automated by generative Al in the next 5 years. 4= Highly automatable: This skill is likely to be automated by generative Al to a significant extent in the next 5 years. 5= Fully automatable: This skill is highly likely to be completely automated by generative Al in the next 5 years. Please provide a single numerical rating for each skill based on this scale.",
+    "expects_explanation": false
+  },
+  {
+    "id": "Version 9",
+    "template": "As an expert in labour and technology how would you rate the automatability of \"{item_name}\" over the medium term (= the next 5 years). Please rate the automatability on a scale of 1 (=not automatable) to 5 (=fully automatable).",
+    "expects_explanation": false
+  },
+  {
+    "id": "Version 10",
+    "template": "As an expert on skills and emerging technologies how would you rate the automatability of \"{item_name}\" over the medium term (the next 3-5 years). Please rate the automatability on a scale of 1 (=not automatable) to 5 (=fully automatable).",
+    "expects_explanation": false
+  }
+]
