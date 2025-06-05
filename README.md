@@ -3,8 +3,6 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/https://github.com/rchejfec/IRPP-oasis-llm-automation-ratings-guide/IRPP-OaSIS-llm-automation-ratings-guide.ipynb)
 
-<br>
-
 ## Overview
 
 This repository contains a Jupyter/Google Colab notebook that replicates the first part of the IRPP study [Harnessing Generative AI: Navigating the Transformative Impact on Canada's Labour Market](https://irpp.org/research-studies/harnessing-generative-ai/) by Matthias Oschinski and Ruhani Walia. The notebook uses Large Language Models (LLMs) via the DSPy framework to assess the automatability of skills and work activities from ESDC's 2023 OaSIS framework. The goal is to provide interested researchers and government officials with a practical starting point for leveraging LLMs in labor market analysis.
@@ -18,9 +16,9 @@ The following document recreates the first part of the study. The goal is to pro
 
 Ratings from LLMs don't need to be more accurate (or even as accurate) as those from experts to be useful. These types of exercises are often meant to inform rather than predict, serving as a starting point for further research or devising a government strategy. Given these tools' impressive ability for processing semantic information and pattern recognition, coupled with the fact that they have been trained on unprecedentedly large amounts of data, they are particularly well suited for these types of tasks.
 
-While it is possible that LLMs are not capable of reasoning through the implications of these questions, and rather act as some sort of stochastic parrot, one can still expect LLM ratings to be similar to those of experts (and indeed [studies find correlations]( https://arxiv.org/abs/2303.10130). Which makes sense, if we assume those experts likely form a big part of the literature, directly or indirectly, that is informing the LLM's answers. While hallucinations are still a risk, and one that requires further research, there are steps that can be taken to try to minimize their impact. Plus, it's reasonable to expect models to keep getting better, meaning these estimates could become more useful over time without the need for significant changes.
+While it is possible that LLMs are not capable of reasoning through the implications of these questions, and rather act as some sort of stochastic parrot, one can still expect LLM ratings to be similar to those of experts (and indeed [studies find correlations]( https://arxiv.org/abs/2303.10130)). Which makes sense, if we assume those experts likely form a big part of the literature, directly or indirectly, that is informing the LLM's answers. While hallucinations are still a risk, and one that requires further research, there are steps that can be taken to try to minimize their impact. Plus, it's reasonable to expect models to keep getting better, meaning these estimates could become more useful over time without the need for significant changes.
 
-Still, there's a lot of exciting, valuable work to be done here -- like validating emerging methodologies like this one, improving upon them and developing new approaches. I hope this notebook can help showcase how easy it is to start incorporating LLMs into your research, in transparent, verifiable, and replicable ways.
+Still, there's a lot of exciting, valuable work to be done here -- like validating emerging methodologies like this one, improving upon them and developing new approaches. I hope this notebook can help showcase how easy it is to start incorporating LLMs into your research.
 
 If you haven't already, I recommend you read the full [study](https://irpp.org/research-studies/harnessing-generative-ai/) to understand the methodology, findings, and recommendations in detail.
 
