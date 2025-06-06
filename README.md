@@ -1,8 +1,8 @@
 # Assessing the automatability of OaSIS skills and work activities using Large Language Models  
-#### *A guide to replicating Oschinski & Walia (2025) for researchers and governments using DSPy*
-
+### *A guide to replicating Oschinski & Walia (2025) for researchers and governments using DSPy*
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rchejfec/IRPP-oasis-llm-automation-ratings-guide/blob/main/IRPP_oasis_llm_automation_ratings_guide.ipynb)
 
+By [Ricardo Chejfec](https://github.com/rchejfec)
 ## Overview
 
 This repository contains a Jupyter/Google Colab notebook that replicates the first part of the IRPP study [Harnessing Generative AI: Navigating the Transformative Impact on Canada's Labour Market](https://irpp.org/research-studies/harnessing-generative-ai/) by Matthias Oschinski and Ruhani Walia. The notebook uses Large Language Models (LLMs) via the DSPy framework to assess the automatability of skills and work activities from ESDC's 2023 OaSIS framework. The goal is to provide interested researchers and government officials with a practical starting point for leveraging LLMs in labor market analysis.
