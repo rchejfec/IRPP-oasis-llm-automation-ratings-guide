@@ -1,7 +1,7 @@
 # Assessing the automatability of OaSIS skills and work activities using Large Language Models  
 #### *A guide to replicating Oschinski & Walia (2025) for researchers and governments using DSPy*
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/https://github.com/rchejfec/IRPP-oasis-llm-automation-ratings-guide/IRPP-OaSIS-llm-automation-ratings-guide.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rchejfec/IRPP-oasis-llm-automation-ratings-guide/blob/main/IRPP_oasis_llm_automation_ratings_guide.ipynb)
 
 ## Overview
 
