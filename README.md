@@ -14,11 +14,11 @@ The first part of their study involves asking two different OpenAI models to rat
 
 The following document recreates the first part of the study. The goal is to provide interested researchers and government officials a starting place on which they can build their own analysis. One of the biggest advantages of this approach is that, compared with alternatives, it is significantly cheaper, simpler, and more flexible to changing circumstances.
 
-Ratings from LLMs don't need to be more accurate (or even as accurate) as those from experts to be useful. These types of exercises are often meant to inform rather than predict, serving as a starting point for further research or devising a government strategy. Given these tools' ability for processing semantic information and pattern recognition, coupled with the fact that they have been trained on unprecedentedly large amounts of data, they are particularly well suited for these types of tasks.
+Ratings from LLMs don't need to be more accurate (or even as accurate) as those from experts to be useful. These types of exercises are often meant to inform rather than predict, serving as a starting point for further research or devising a government strategy. Given these tools' ability for processing semantic information and pattern recognition, coupled with the fact that they have been trained on unprecedentedly large amounts of data, they are well suited for this task.
 
-While it is possible that LLMs are not capable of reasoning through the implications of these questions, and rather act as some sort of stochastic parrot, one can still expect LLM ratings to be similar to those of experts (and [studies find correlations]( https://arxiv.org/abs/2303.10130)). Which makes sense, if we assume those experts likely form a big part of the literature, directly or indirectly, that is informing the LLM's answers. While hallucinations are still a risk, and one that requires further research, there are steps that can be taken to try to minimize their impact. Plus, it's reasonable to expect models to keep getting better, meaning these estimates could become more useful over time without the need for significant changes.
+While it is possible that LLMs are not capable of reasoning through the implications of these questions, and rather act as some sort of stochastic parrot, one can still expect LLM ratings to be similar to those of experts (and [studies find correlations]( https://arxiv.org/abs/2303.10130)). Especially if we assume those experts likely form a big part of the literature, directly or indirectly, that is informing the LLM's answers. While hallucinations are still a risk, and one that requires further research, there are steps that can be taken to try to minimize their impact. Plus, it's likely that models will keep getting better, meaning these estimates could become more useful over time without the need for significant changes.
 
-Still, there's a lot of exciting, valuable work to be done here -- like validating emerging methodologies like this one, improving upon them and developing new approaches. I hope this notebook can help showcase how easy it is to start incorporating LLMs into your research.
+Still, there's a lot of exciting, valuable work to be done here -- like validating emerging methodologies such as this one, improving upon them and developing new approaches. I hope this notebook can help showcase how easy it is to start incorporating LLMs into your research.
 
 If you haven't already, I recommend you read the full [study](https://irpp.org/research-studies/harnessing-generative-ai/) to understand the methodology, findings, and recommendations in detail.
 
@@ -43,7 +43,7 @@ Follow these steps to run the analysis:
 **4. Run the Notebook:** 
   * Execute the cells in the notebook sequentially. 
   * Be mindful of API rate limits. The notebook processes 99 skills/work activities with multiple prompt phrasings, leading to approximately 1,000 API requests. Adjust `time.sleep()` values in Step 3 of the notebook if needed for your specific model's limits. 
-  * Runtime can be significant (e.g., ~2 hours with Gemma 3 1B on Colab) and can be reduced by using fewer prompt phrasings.
+  * Runtime can be significant (e.g., ~1 hour with Gemma 3 1B on Colab) and can be reduced by using fewer prompt phrasings.
 
 **5. Review Results:** 
  * The notebook will generate CSV files containing the full table of ratings and a summary table. These will be saved in your Colab environment, and you can download them from the file browser, which is advisable as they will be deleted once you end the session. 
