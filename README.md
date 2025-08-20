@@ -11,23 +11,21 @@ This repository contains a Google Colab notebook that replicates the first part 
 
 You can use the provided code to:
 *	Run your own versions of this experiment, even comparing different models or parameters.
-* Track how these ratings evolve as new AI tools emerge, and we gain a better understanding of what they are capable of.
+* Track how these ratings evolve as new AI tools emerge, and as we gain a better understanding of their capability.
 * Adapt the script to prompt LLMs on a completely different topic with your own list of terms and phrasings.
 
 ## Background and Purpose 
-In a recently published IRPP study, authors Matthias Oscinski and Ruhani Walia leverage OpenAI's ChatGPT to explore the automation risk of Canadian occupations given advancements in generative AI in the medium term.
+In a recently published IRPP study, authors Matthias Oscinski and Ruhani Walia leverage OpenAI's ChatGPT to explore the automation risk of Canadian occupations given medium term advancements in generative AI.
 
 The first part of their study involves asking two different OpenAI models to rate the automatability of 75 skills and work activities using 12 different phrasings and averaging the results. These skills and work activities come from ESDC's [OaSIS framework]( https://noc.esdc.gc.ca/Oasis/OasisWelcome) which breaks down Canadian occupations into their major elements. This mimics previous studies on the topic, which have typically surveyed experts rather than LLMs. In both cases, these ratings are used to explore the automation risk of occupations by aggregating the score of the occupation's most relevant competencies.
 
-The following document recreates the first part of the study. The goal is to provide interested researchers and government officials a starting place from which they can build their own analysis. One of the biggest advantages of this approach is that, compared with alternatives, it is significantly cheaper, simpler, and more flexible to changing circumstances.
+The following document recreates the first part of the study. The goal is to provide a starting place for interested researchers and government officials to build their own analysis. One of the biggest advantages of this approach is that, compared with alternatives, it is significantly cheaper, simpler, and more flexible to changing circumstances.
 
-Ratings from LLMs don't need to be more accurate (or even as accurate) as those from experts to be useful. These types of exercises are often meant to inform rather than predict, serving as a starting point for further research or devising a government strategy. Given these tools' ability for processing semantic information and pattern recognition, coupled with the fact that they have been trained on an unprecedented amount of data, they are well suited for these types of classification or scoring tasks.
+These types of exercises are often meant to inform rather than predict, serving as a starting point for further research or devising a government strategy. While it is possible that LLMs are not capable of reasoning through the implications of these questions, one can still expect LLM ratings to be similar to those of experts (and researchers find correlations, like this [study]( https://arxiv.org/abs/2303.10130) or [this ILO report](https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure)). This is particularly the case if we assume that those experts are likely to form a significant part of the literature, directly or indirectly, furnishing the LLM's answers. While hallucinations or errors are still a risk, and one that requires further research, there are steps that can be taken to try to minimize their impact. It is also likely that models will keep getting better, meaning these estimates could become more useful over time without the need for significant changes to the analysis itself.
 
-While it is possible that LLMs are not capable of reasoning through the implications of these questions, one can still expect LLM ratings to be similar to those of experts (and researchers find correlations, like this [study]( https://arxiv.org/abs/2303.10130) or [this ILO report](https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure)). This is particularly the case if we assume those experts are likely to form a big part of the literature, directly or indirectly, that is informing the LLM's answers. While hallucinations are still a risk, and one that requires further research, there are steps that can be taken to try to minimize their impact. Plus, it's likely that models will keep getting better, meaning these estimates could become more useful over time without the need for significant changes to the analysis itself.
+Of course, the question is not just whether we can use an LLM, but whether we should. As a new methodology using emerging and sometimes unreliable tools, results should be approached with caution. At the same time, the only way to learn is to experiment. There is a lot of valuable work to be done validating and improving upon emerging methodologies such as this one. My hope is that this project encourages other researchers to experiment with this new approach to labour market analysis.
 
-Still, there's a lot of exciting, valuable work to be done here -- like validating emerging methodologies such as this one, improving upon them and developing new approaches. I hope this notebook can help showcase how easy it is to start incorporating LLMs into your research.
-
-If you haven't already, I recommend you read the full [study](https://irpp.org/research-studies/harnessing-generative-ai/) to understand the methodology, findings, and recommendations in detail.
+If you have not already, I recommend you read the full [study](https://irpp.org/research-studies/harnessing-generative-ai/) to understand the methodology, findings, and recommendations in detail.
 
 ## Getting Started 
 Follow these steps to run the analysis:
@@ -63,4 +61,4 @@ Follow these steps to run the analysis:
 ## Acknowledgement and Disclaimer
 I am grateful to Matthias Oschinski and Ruhani Walia for developing the original methodology, for their permission to replicate their study, and for their valuable comments on a draft of this guide. The views expressed here, and any errors in the accompanying notebook, are my own.
 
-I used Gemini (2.5 Pro Preview) when learning how to use DSPy, with help developing initial portions of the code and in editing. I take full responsibility for this notebook's content and accuracy.
+I used Gemini (2.5 Pro Preview) when learning how to use DSPy, with help developing initial portions of the guide and in editing. I take full responsibility for this notebook's content and accuracy.
