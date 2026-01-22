@@ -1,0 +1,10 @@
+{
+  "model": "gemini-2.0-flash",
+  "provider": "google",
+  "total_calls": 990,
+  "successful_calls": 990,
+  "processing_time_seconds": 248.73722982406616,
+  "batch_size": 3,
+  "timestamp": "2026-01-21T19:04:46.568399",
+  "approach": "async_acall"
+}

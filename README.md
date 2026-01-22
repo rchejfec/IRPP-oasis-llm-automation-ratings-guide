@@ -51,12 +51,27 @@ Follow these steps to run the analysis:
   * Runtime can be significant (e.g., ~1 hour with Gemma 3 1B on Colab) and can be reduced by using fewer prompt phrasings or using batch processing.
 
 **5. Review Results:** 
- * The notebook will generate CSV files containing the full table of ratings and a summary table. These will be saved in your Colab environment, and you can download them from the file browser, which is advisable as they will be deleted once you end the session. 
+ * The notebook will generate CSV files containing the full table of ratings and a summary table. These will be saved in your Colab environment, and you can download them from the file browser, which is advisable as they will be deleted once you end the session.
+
+## Example Output
+
+The `ExampleOutput/` folder contains sample results from running the full pipeline with Gemini 2.0 Flash:
+
+| File | Description |
+|------|-------------|
+| `full_table.csv` | All 990 individual ratings — same format as notebook Step 4 |
+| `summary_table.csv` | Averaged rating per skill — same format as notebook Step 4 |
+| `run_metadata.json` | Model info and runtime statistics |
 
 ## Important Considerations
-* **DSPy Framework:** While the authors used the ChatGPT API directly, this notebook uses DSPy for its flexibility in switching between LLMs and for structured prompting. This allows interested researchers to compare estimates between models as well as ensure the analysis can easily be updated as new models are developed.
-* **API Keys & Model Choice:** You are responsible for obtaining and managing your API key. Performance and rate limits vary by model. 
+* **DSPy Framework:** While the authors used the ChatGPT API directly, this notebook uses DSPy for its structured prompting capabilities (Signatures) rather than its optimization features, providing cleaner output parsing and easy model substitution. DSPy uses [LiteLLM](https://docs.litellm.ai/docs/providers) under the hood, making it straightforward to switch between providers. For more on DSPy's advanced features, see [dspy.ai](https://dspy.ai/).
+* **Prompt Variations:** This notebook uses 10 prompt phrasings adapted from the original study's 12. Versions 7 and 9 from the original varied OpenAI-specific parameters (frequency/presence penalties) rather than wording, so they were omitted as DSPy abstracts provider-specific settings.
+* **API Keys & Model Choice:** You are responsible for obtaining and managing your API key. Performance and rate limits vary by model. To switch models, update the `LLM_PROVIDER_MODEL_STRING` variable (e.g., `openai/gpt-4`, `anthropic/claude-3-sonnet`) and the corresponding secret name.
 * **API Usage & Costs:** Be aware of the number of requests (approx. 1,000 - 3,000) and any potential costs associated with your chosen API. 
+
+## Async Processing
+
+For faster processing (~5x speedup), see the `AsyncProcessing/` folder. This provides a drop-in module to run API calls in parallel. Requires a paid API tier with higher rate limits.
 
 ## Acknowledgement and Disclaimer
 I am grateful to Matthias Oschinski and Ruhani Walia for developing the original methodology, for their permission to replicate their study, and for their valuable comments on a draft of this guide. The views expressed here, and any errors in the accompanying notebook, are my own.
