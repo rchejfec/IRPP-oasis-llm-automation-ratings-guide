@@ -59,8 +59,8 @@ The `ExampleOutput/` folder contains sample results from running the full pipeli
 
 | File | Description |
 |------|-------------|
-| `full_table.csv` | All 990 individual ratings — same format as notebook Step 4 |
-| `summary_table.csv` | Averaged rating per skill — same format as notebook Step 4 |
+| `full_table.csv` | All 990 individual ratings |
+| `summary_table.csv` | Averaged rating per skill |
 | `run_metadata.json` | Model info and runtime statistics |
 
 ## Important Considerations
